@@ -122,3 +122,32 @@ p{
 .btnRed:hover{
 	background-color: #dd3434;
 }
+
+/*     Feature      */
+.feature{
+	display: flex;
+	margin: 100px 0;
+	flex-wrap: wrap;
+}
+.featureItems{
+	width: 33.33333%;
+	text-align: center;
+	padding: 0 20px;
+	margin: 25px 0;
+
+}
+.featureIcon{
+	margin-bottom: 25px;
+}
+.featureTitle{
+	font-size: 14px;
+	color: #2d3033;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.featureText{
+	font-size: 14px;
+	line-height: 1.5;
+	color: #6c7279;
+}
