@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
-
+	text-align: center;
 	font-family: 'Raleway',sans-serif;
 	border:0;
 	cursor: pointer;
@@ -120,7 +120,9 @@ h1,h2,h3,h4,h5,h6{
 .btnRed:hover{
 	background-color: #dd3434;
 }
-
+.btnLong{
+	min-width: 280px;
+}
 /*     Feature      */
 .feature{
 	display: flex;
@@ -249,6 +251,9 @@ h1,h2,h3,h4,h5,h6{
 .social{
 	display: flex;
 }
+.socialFooter{
+	justify-content: center;
+}
 .socialItem{
 	display: flex;
 	justify-content: center;
@@ -266,11 +271,23 @@ h1,h2,h3,h4,h5,h6{
 .socialItem:hover .socialIcon{
 	fill: red;
 }
+.socialFooter .socialItem{
+	background-color: transparent;
+	border-width: 2px;
+	border-color:#fff;
+	border-radius: 2px;
+}
+.socialFooter .socialItem:hover{
+	background-color: #fff;
+}
 .socialIcon{
 	fill: #c6cacc;
 	display: block;
 	height: 18px;
 	transition: fill .3s linear;
+}
+.socialFooter .socialIcon{
+	fill: #fff;
 }
 
 /*Reviews*/
@@ -313,5 +330,65 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 13px;
 	font-weight: 700;
 	text-transform: uppercase;
+	color: #fff;
+}
+
+/*Download*/
+.download{
+	margin: 90px 0px;
+	text-align: center;
+
+}
+.downloadTitle{
+	font-size: 28px;
+	color: #2d3033;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.downloadText{
+	font-size: 13px;
+	color: #2d3033;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+/*Footer*/
+.footer{
+
+	background-color: #3a3e64;
+}
+.footerInner{
+	padding: 70px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.footerBlock{
+	width: 33.33333%;
+	text-align: center;
+	padding: 0px 15px;
+}
+.footerTitle{
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footerAddress{
+	font-style: normal;
+	font-size: 14px;
+	color: rgba(255,255,255,.5);
+}
+.footerCopiright{
+	padding: 20px 0;
+	background-color: #313454;
+}
+.copirightText{
+	text-align: center;
+	color: #808080;
+	line-height: 1.5;
+	font-size: 14px;
+}
+.copirightText span{
 	color: #fff;
 }
