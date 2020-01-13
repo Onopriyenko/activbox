@@ -15,14 +15,12 @@ body{
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
 }
-p{
-	margin: 0 10px;
-}
 /*CONTAINER**********/
 .container{
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 
 
@@ -201,5 +199,119 @@ p{
 }
 .workText{
 	font-size: 14px;
+	color: #fff;
+}
+
+/*Team*/
+
+
+.team{
+	margin: 100px 0 70px;
+}
+.teamInner{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+
+}
+.teamItem{
+	width: 25%;
+	padding: 0px 15px;
+	margin-bottom: 30px;
+}
+.teamPhoto{
+	margin-bottom: 20px;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.teamName{
+	margin-bottom: 8px;
+	font-size: 22px;
+	color: #2d3033;
+}
+
+.teamProf{
+	font-size: 13px;
+	color: red;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.teamText{
+	color: #6c7279;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+/*      Social    */
+.social{
+	display: flex;
+}
+.socialItem{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border:1px solid #e8ecee;
+	margin-right: 4px;
+	background-color: #fff;
+	transition: background .3s linear;
+}
+.socialItem:hover{
+	background-color: #e8ecee;
+}
+.socialItem:hover .socialIcon{
+	fill: red;
+}
+.socialIcon{
+	fill: #c6cacc;
+	display: block;
+	height: 18px;
+	transition: fill .3s linear;
+}
+
+/*Reviews*/
+.review{
+	overflow: hidden;
+	background-color: #53354a;
+}
+.reviewItem{
+	display: flex;
+	flex-wrap: wrap;
+}
+.reviewPhoto{
+	width: 50%;
+	height: 500px;
+	position: relative;
+}
+.reviewImg{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+}
+.reviewContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	padding-left: 80px;
+}
+.reviewText{
+	font-family: 'Cardo',sans-serif;
+	font-style: italic;
+	font-size: 36px;
+	line-height: 1.2;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.reviewAuthor{
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
 	color: #fff;
 }
